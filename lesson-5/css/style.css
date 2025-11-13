@@ -1,0 +1,40 @@
+.first {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    font-style: italic;
+}
+
+.second {
+    text-decoration: line-through;
+}
+
+.third {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fourth {
+    color: #800080;
+    word-spacing: 30px;
+    text-decoration: wavy overline #800080;
+    text-shadow: 5px 5px 8px #800080;
+}
+
+.fifth {
+    text-decoration: double underline;
+    letter-spacing: 5px;
+}
+
+/* Добавил для себя, чтобы потренировать другие значения из файла с доп. информацией */
+.lines-1 {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 40px;
+    text-decoration: solid overline #11ff00;
+    text-transform: capitalize;
+    text-indent: 50px;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    text-align: justify;
+}
