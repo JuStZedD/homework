@@ -1,0 +1,48 @@
+html {
+  font-family: sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+header {
+  font-size: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 110px;
+  padding-bottom: 20px;
+}
+
+.container {
+  border-bottom: 1px solid #ababab;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  justify-self: start;
+  margin-left: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+a {
+  color: #000;
+}
+
+.link-phone {
+  text-decoration: none;
+}
+
+.phone {
+  margin-right: 20px;
+}
