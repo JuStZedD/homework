@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forms style practice</title>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<!-- <h1 class="title">Оформление заказа</h1> -->
+		<form class="form">
+			<fieldset class="form-group">
+				<legend class="form-group-title">Контактные данные</legend>
+				<label for="name" class="label">Ваше имя</label>
+				<input
+					id="name"
+					type="text"
+					class="input"
+					name="name"
+					placeholder="Имя"
+					required
+				/>
+				<label for="phone" class="label">Ваш номер телефона</label>
+				<input
+					id="phone"
+					type="tel"
+					class="input"
+					name="phone"
+					inputmode="tel"
+					placeholder="+7 999 999 99 99"
+					required
+				/>
+				<label for="email" class="label">Ваш email</label>
+				<input
+					id="email"
+					type="email"
+					class="input"
+					name="email"
+					placeholder="Почта"
+					required
+				/>
+			</fieldset>
+			<fieldset class="form-group">
+				<legend class="form-group-title">Адрес и время доставки</legend>
+				<label for="city" class="label">Выберите город</label>
+				<select class="select" name="city" id="city" required>
+					<option value="not-selected" disabled selected>Не выбрано</option>
+					<option value="moscow">Москва</option>
+					<option value="spb">Санкт-Петербург</option>
+					<option value="kazan">Казань</option>
+					<option value="sevastopol">Севастополь</option>
+					<option value="simferopol">Симферополь</option>
+					<option value="novosibirsk">Новосибирск</option>
+					<option value="chelyabinsk">Челябинск</option>
+				</select>
+				<label for="address" class="label">Ваш адрес</label>
+				<input
+					type="text"
+					id="address"
+					name="address"
+					class="input"
+					placeholder="Адрес"
+					required
+				/>
+				<label for="date" class="label">Дата и время доставки</label>
+				<input
+					id="date"
+					type="datetime-local"
+					class="input"
+					name="date"
+					placeholder="Дата"
+					required
+				/>
+			</fieldset>
+			<fieldset class="form-group">
+				<legend class="form-group-title">Способ оплаты</legend>
+				<label for="payment" class="label">Выберите способ оплаты</label>
+				<select class="select" name="payment" id="payment" required>
+					<option value="not-selected" selected disabled>Не выбрано</option>
+					<option value="card-online-payment">Картой онлайн</option>
+					<option value="cash-courier">Наличными курьеру</option>
+					<option value="card-courier">Картой курьеру</option>
+				</select>
+			</fieldset>
+			<fieldset class="form-group">
+				<legend class="form-group-title">Комментарий курьеру</legend>
+				<textarea
+					class="message"
+					name="message"
+					id="message"
+					placeholder="Ваше сообщение"
+				></textarea>
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="checkbox" class="label checkbox-label">
+					<input
+						type="checkbox"
+						class="checkbox"
+						id="checkbox"
+						name="checkbox"
+						required
+					/>
+					<span class="checkbox-text">
+						Я ознакомился с правилами торговой площадки и условиями оплаты и
+						возврата
+					</span>
+				</label>
+			</fieldset>
+			<button class="button">Оформить заказ</button>
+		</form>
+	</body>
+</html>
